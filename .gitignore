@@ -1,5 +1,10 @@
 .DS_Store
 .env
 .env.*
-!.env.example
 node_modules/
+.openai/
+.sites-runtime/
+work/
+*.csv
+*.pem
+*.key
