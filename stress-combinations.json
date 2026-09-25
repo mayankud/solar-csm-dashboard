@@ -1,0 +1,14 @@
+{
+  "seed": 930517,
+  "passed": 500,
+  "total": 500,
+  "percent": 100,
+  "failures": [],
+  "capacity": {
+    "clients": 500,
+    "activityRows": 20000,
+    "rankMs": 42.53,
+    "investigateAllMs": 167.306875
+  },
+  "invalidImportsRejected": 7
+}

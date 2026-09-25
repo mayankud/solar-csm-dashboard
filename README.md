@@ -20,6 +20,14 @@ Open `http://localhost:8000`. There is no build step, backend, API key, package 
 4. Use **Portfolio health** for ownership, high-priority value and renewals.
 5. Export the queue to retain action plans. Records and plans are session-only and reset on reload.
 
+## Investigation and recovery plans
+
+Open **Account investigation** for source-linked evidence, hypotheses to validate, dated actions, owners, success criteria and recovery comparisons. Add customer context, create a plan and export/restore recovery records. Marking an action Done requires outcome evidence; it does not establish recovery. All records remain session-only. Notes are stored but not interpreted by a language model. No live AI model or automatic outreach is connected.
+
+## Validation
+
+The September 25 synthetic stress evaluation improved from 400/600 to 600/600 development cases. Reserved date/volume variants passed 600/600; combined-risk cases passed 500/500. These are rule and workflow checks, not real-world AI accuracy or churn prediction. See [the report](CSM-Stress-Test-Report.md) for scope, limitations and reproduction commands.
+
 ## Customize for your industry
 
 **Customize workspace** provides general-business, professional-services, software and commerce presets. Change customer, activity, service and value terminology; currency; decline threshold; minimum baseline; delivery target; and freshness tolerance.
@@ -54,6 +62,7 @@ Monthly columns: `customer_id`, `service`, `month` (YYYY-MM), `units`. Each cust
 The priority score is deterministic, not an AI prediction or a churn probability. Default points:
 
 - Activity decline versus the preceding three completed months: 25 points at 20%, 40 at 40%; baseline minimum 10.
+- Service decline hidden by growth: 25 total points when a service meets the decline threshold, complete service history is available, and aggregate activity has not already triggered an alert.
 - Silence exceeding twice normal activity cadence: 20.
 - On-time delivery below 90%: 15.
 - At least one critical issue: 20.

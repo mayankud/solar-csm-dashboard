@@ -1,0 +1,12 @@
+const assert=require('node:assert/strict'),P=require('./model.js'),I=require('./investigator.js');
+const data=P.demo(),b=I.investigate(data,'DEMO-Q7M');
+assert(b.tasks.some(t=>t.id==='critical'));assert(b.hypotheses.every(h=>h.evidence.length));assert(b.facts.every(f=>f.source));assert.equal(b.baseline.snapshot,data.asOf);
+const paused=I.investigate(data,'DEMO-F4C');assert.deepEqual(paused.tasks.map(t=>t.id),['restart']);
+const onboarding=I.investigate(data,'DEMO-D0R');assert.deepEqual(onboarding.tasks.map(t=>t.id),['activate']);
+assert(I.investigate(data,'DEMO-L1Y').tasks.some(t=>t.id==='data'));
+const hidden=structuredClone(data);hidden.activity=Array.from({length:4},(_,i)=>['Declining','Growing'].map((service,j)=>({customer_id:'DEMO-Q7M',service,month:`2026-0${i+5}`,units:i===3?(j?180:20):100}))).flat();
+const hb=I.investigate(hidden,'DEMO-Q7M');assert.equal(hb.account.change,0);assert(hb.facts.some(f=>f.kind==='service'&&f.label.includes('Declining')));
+assert.equal(I.review({baseline:b.baseline},b).status,'Awaiting newer data');
+const later=structuredClone(data);later.asOf='2026-09-22';later.accounts.forEach(a=>a.updated_at=later.asOf);const lb=I.investigate(later,'DEMO-Q7M');assert.equal(I.review({baseline:b.baseline},lb).status,'Review the evidence');assert(I.review({baseline:b.baseline},lb).text.includes('newer completed month'));
+assert.equal(I.investigate(data,'DEMO-Q7M',P.DEFAULTS,[{date:'2027-01-01',kind:'observation'}]).context.length,0);
+console.log('Investigation checks passed: evidence sources, lifecycle, stale data, hidden service decline, future notes and recovery comparisons.');

@@ -17,6 +17,7 @@
   const previousMonth = (month,offset=1) => {const d=new Date(month+'-01T00:00:00Z');d.setUTCMonth(d.getUTCMonth()-offset);return d.toISOString().slice(0,7);};
   const sum = xs => xs.reduce((s,n)=>s+n,0);
   const isUrgent = r => ['Critical','At risk'].includes(r.status);
+  const declines = (latest, baseline, percent) => latest <= baseline * (1-percent/100) + Math.max(1,baseline)*Number.EPSILON*8;
   function demo() {
     const asOf='2026-09-21';
     const specs=[
@@ -62,7 +63,12 @@
     if([account.on_time_pct,account.critical_issues,account.overdue_days].every(n=>n===null))missing.push('No operational risk fields supplied');
     if(!account.last_activity_date||!account.cadence_days)missing.push('Missing activity date or normal cadence');
     const evidence=[];
-    if(change!==null&&baseline>=config.minBaseline&&change<=-config.decline)evidence.push({label:'Activity declined',detail:`${Math.round(change)}% in the latest completed month vs the preceding 3-month average`,points:change<=-config.decline*2?40:25,kind:'activity'});
+    const activityComplete=hasBaseline&&latest!==null&&!missing.includes('Incomplete service-month coverage');
+    if(activityComplete&&baseline>=config.minBaseline&&declines(latest,baseline,config.decline))evidence.push({label:'Activity declined',detail:`${Math.round(change)}% in the latest completed month vs the preceding 3-month average`,points:declines(latest,baseline,config.decline*2)?40:25,kind:'activity'});
+    if(activityComplete&&!evidence.some(x=>x.kind==='activity')){
+      const totals=new Map();for(const row of activity)if(row.customer_id===account.customer_id){if(!totals.has(row.service))totals.set(row.service,{});totals.get(row.service)[row.month]=row.units;}
+      for(const [service,m] of totals){const base=sum([1,2,3].map(n=>m[previousMonth(closed,n)]))/3;if(base>=config.minBaseline&&declines(m[closed],base,config.decline))evidence.push({label:service+' activity declined',detail:`${m[closed]} vs ${Math.round(base*10)/10} average ${config.unit.toLowerCase()} in ${closed}`,points:evidence.some(x=>x.kind==='service')?0:25,kind:'service',service});}
+    }
     if(silence!==null&&account.cadence_days&&silence>account.cadence_days*2)evidence.push({label:'Ordering or usage gap',detail:`${silence} days since activity; normal interval is ${account.cadence_days} days`,points:20,kind:'silence'});
     if(account.on_time_pct!==null&&account.on_time_pct<config.sla)evidence.push({label:'Delivery below target',detail:`${account.on_time_pct}% on time vs ${config.sla}% target`,points:15,kind:'delivery'});
     if(account.critical_issues>0)evidence.push({label:'Unresolved critical issue',detail:`${account.critical_issues} critical issue${account.critical_issues===1?'':'s'} require a resolution owner`,points:20,kind:'critical'});
@@ -75,6 +81,7 @@
     if(evidence.some(e=>e.kind==='critical')&&!missing.length)action='Agree a critical-issue owner and a customer update today.';
     else if(evidence.some(e=>e.kind==='silence')&&!missing.length)action='Confirm whether the activity pause is expected.';
     else if(evidence.some(e=>e.kind==='delivery')&&!missing.length)action='Review delivery misses and agree a recovery date.';
+    if(evidence.some(e=>e.kind==='payment')&&!missing.length&&!evidence.some(e=>['critical','silence','delivery','activity','service'].includes(e.kind)))action='Confirm invoice accuracy, any dispute and a payment resolution date.';
     if(status==='Paused')action='Confirm the agreed restart date; exclude from churn outreach.';
     if(status==='Onboarding')action='Confirm activation milestones and the first value event.';
     const coverage=[account.on_time_pct,account.critical_issues,account.overdue_days].filter(n=>n!==null).length+(!missing.length?3:0);
@@ -116,6 +123,6 @@
     const distinctMonths=new Set(cleanActivity.map(r=>r.month));if(distinctMonths.size>24)errors.push('Use at most 24 distinct months per import.');
     return {errors:errors.slice(0,12),data:{accounts:cleanAccounts,activity:cleanActivity,asOf,source:'import'}};
   }
-  const api={DEFAULTS,PRESETS,STATUS,STATUS_CLASS,ACCOUNT_FIELDS,ACTIVITY_FIELDS,demo,evaluate,ranked,aggregate,validateImport,days,previousMonth,sum,isUrgent,dateValue};
+  const api={DEFAULTS,PRESETS,STATUS,STATUS_CLASS,ACCOUNT_FIELDS,ACTIVITY_FIELDS,demo,evaluate,ranked,declines,aggregate,validateImport,days,previousMonth,sum,isUrgent,dateValue};
   if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.Pulse=api;
 })(typeof window!=='undefined'?window:globalThis);

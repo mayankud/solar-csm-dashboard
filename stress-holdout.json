@@ -1,0 +1,131 @@
+{
+  "phase": "holdout",
+  "definition": "A case passes only when its expected decision and all evidence/action invariants pass. Synthetic specification conformance, not real-world churn prediction accuracy.",
+  "passed": 600,
+  "total": 600,
+  "percent": 100,
+  "scenarioFamilies": 24,
+  "failures": [],
+  "byScenario": [
+    {
+      "scenario": "healthy",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "decline_boundary",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "above_decline_boundary",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "severe_decline",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "delivery",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "critical",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "overdue_invoice",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "renewal_without_decline",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "renewal_date_passed",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "inactivity",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "cadence_boundary",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "paused",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "onboarding",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "stale",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "missing_service_month",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "service_decline_masked",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "zero_baseline",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "partial_month",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "all_operations_missing",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "payment_recovery",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "future_note",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "malformed_note",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "task_done_is_not_recovery",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "injection_in_note",
+      "passed": 25,
+      "total": 25
+    }
+  ]
+}

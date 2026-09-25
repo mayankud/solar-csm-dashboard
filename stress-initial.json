@@ -1,0 +1,1332 @@
+{
+  "phase": "development",
+  "definition": "A case passes only when its expected decision and all evidence/action invariants pass. Synthetic specification conformance, not real-world churn prediction accuracy.",
+  "passed": 400,
+  "total": 600,
+  "percent": 66.66666666666667,
+  "scenarioFamilies": 24,
+  "failures": [
+    {
+      "industry": "SaaS",
+      "scenario": "decline_boundary",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "decline_boundary",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "decline_boundary",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "decline_boundary",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "decline_boundary",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "overdue_invoice",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "overdue_invoice",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "overdue_invoice",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "overdue_invoice",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "overdue_invoice",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "renewal_without_decline",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "renewal_without_decline",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "renewal_without_decline",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "renewal_without_decline",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "renewal_without_decline",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "renewal_date_passed",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "renewal_date_passed",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "renewal_date_passed",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "renewal_date_passed",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "renewal_date_passed",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "missing_service_month",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "missing_service_month",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "missing_service_month",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "missing_service_month",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "missing_service_month",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "service_decline_masked",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "service_decline_masked",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "service_decline_masked",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "service_decline_masked",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "service_decline_masked",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "payment_recovery",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "payment_recovery",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "payment_recovery",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "payment_recovery",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "payment_recovery",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "malformed_note",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "malformed_note",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "malformed_note",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "malformed_note",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "SaaS",
+      "scenario": "malformed_note",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "decline_boundary",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "decline_boundary",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "decline_boundary",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "decline_boundary",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "decline_boundary",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "overdue_invoice",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "overdue_invoice",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "overdue_invoice",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "overdue_invoice",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "overdue_invoice",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "renewal_without_decline",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "renewal_without_decline",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "renewal_without_decline",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "renewal_without_decline",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "renewal_without_decline",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "renewal_date_passed",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "renewal_date_passed",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "renewal_date_passed",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "renewal_date_passed",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "renewal_date_passed",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "missing_service_month",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "missing_service_month",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "missing_service_month",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "missing_service_month",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "missing_service_month",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "service_decline_masked",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "service_decline_masked",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "service_decline_masked",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "service_decline_masked",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "service_decline_masked",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "payment_recovery",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "payment_recovery",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "payment_recovery",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "payment_recovery",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "payment_recovery",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "malformed_note",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "malformed_note",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "malformed_note",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "malformed_note",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Professional services",
+      "scenario": "malformed_note",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "decline_boundary",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "decline_boundary",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "decline_boundary",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "decline_boundary",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "decline_boundary",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "overdue_invoice",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "overdue_invoice",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "overdue_invoice",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "overdue_invoice",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "overdue_invoice",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "renewal_without_decline",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "renewal_without_decline",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "renewal_without_decline",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "renewal_without_decline",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "renewal_without_decline",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "renewal_date_passed",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "renewal_date_passed",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "renewal_date_passed",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "renewal_date_passed",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "renewal_date_passed",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "missing_service_month",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "missing_service_month",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "missing_service_month",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "missing_service_month",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "missing_service_month",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "service_decline_masked",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "service_decline_masked",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "service_decline_masked",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "service_decline_masked",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "service_decline_masked",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "payment_recovery",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "payment_recovery",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "payment_recovery",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "payment_recovery",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "payment_recovery",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "malformed_note",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "malformed_note",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "malformed_note",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "malformed_note",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Wholesale",
+      "scenario": "malformed_note",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "decline_boundary",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "decline_boundary",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "decline_boundary",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "decline_boundary",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "decline_boundary",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "overdue_invoice",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "overdue_invoice",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "overdue_invoice",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "overdue_invoice",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "overdue_invoice",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "renewal_without_decline",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "renewal_without_decline",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "renewal_without_decline",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "renewal_without_decline",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "renewal_without_decline",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "renewal_date_passed",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "renewal_date_passed",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "renewal_date_passed",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "renewal_date_passed",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "renewal_date_passed",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "missing_service_month",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "missing_service_month",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "missing_service_month",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "missing_service_month",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "missing_service_month",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "service_decline_masked",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "service_decline_masked",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "service_decline_masked",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "service_decline_masked",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "service_decline_masked",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "payment_recovery",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "payment_recovery",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "payment_recovery",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "payment_recovery",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "payment_recovery",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "malformed_note",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "malformed_note",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "malformed_note",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "malformed_note",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Logistics",
+      "scenario": "malformed_note",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "decline_boundary",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "decline_boundary",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "decline_boundary",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "decline_boundary",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "decline_boundary",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "overdue_invoice",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "overdue_invoice",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "overdue_invoice",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "overdue_invoice",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "overdue_invoice",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "renewal_without_decline",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "renewal_without_decline",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "renewal_without_decline",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "renewal_without_decline",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "renewal_without_decline",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "renewal_date_passed",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "renewal_date_passed",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "renewal_date_passed",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "renewal_date_passed",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "renewal_date_passed",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "missing_service_month",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "missing_service_month",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "missing_service_month",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "missing_service_month",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "missing_service_month",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "service_decline_masked",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "service_decline_masked",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "service_decline_masked",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "service_decline_masked",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "service_decline_masked",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "payment_recovery",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "payment_recovery",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "payment_recovery",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "payment_recovery",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "payment_recovery",
+      "variant": 4,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "malformed_note",
+      "variant": 0,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "malformed_note",
+      "variant": 1,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "malformed_note",
+      "variant": 2,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "malformed_note",
+      "variant": 3,
+      "pass": false
+    },
+    {
+      "industry": "Solar services",
+      "scenario": "malformed_note",
+      "variant": 4,
+      "pass": false
+    }
+  ],
+  "byScenario": [
+    {
+      "scenario": "healthy",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "decline_boundary",
+      "passed": 0,
+      "total": 25
+    },
+    {
+      "scenario": "above_decline_boundary",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "severe_decline",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "delivery",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "critical",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "overdue_invoice",
+      "passed": 0,
+      "total": 25
+    },
+    {
+      "scenario": "renewal_without_decline",
+      "passed": 0,
+      "total": 25
+    },
+    {
+      "scenario": "renewal_date_passed",
+      "passed": 0,
+      "total": 25
+    },
+    {
+      "scenario": "inactivity",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "cadence_boundary",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "paused",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "onboarding",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "stale",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "missing_service_month",
+      "passed": 0,
+      "total": 25
+    },
+    {
+      "scenario": "service_decline_masked",
+      "passed": 0,
+      "total": 25
+    },
+    {
+      "scenario": "zero_baseline",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "partial_month",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "all_operations_missing",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "payment_recovery",
+      "passed": 0,
+      "total": 25
+    },
+    {
+      "scenario": "future_note",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "malformed_note",
+      "passed": 0,
+      "total": 25
+    },
+    {
+      "scenario": "task_done_is_not_recovery",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "scenario": "injection_in_note",
+      "passed": 25,
+      "total": 25
+    }
+  ]
+}
