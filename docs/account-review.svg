@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="355" viewBox="0 0 1080 355" role="img" aria-labelledby="title desc">
+  <title id="title">Customer Pulse: from a risk flag to a follow-up plan</title>
+  <desc id="desc">The synthetic account Demo Client Q7M is marked Critical at 100 out of 100. Completed-month activity fell 51 percent, on-time delivery was 74 percent, and two critical issues were open. The suggested next step is to assign an issue owner and agree on a customer update.</desc>
+  <rect x="1" y="1" width="1078" height="353" rx="22" fill="#f2f7f4" stroke="#c7d8cf"/>
+  <g font-family="system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" fill="#20342b">
+    <text x="32" y="42" font-size="15" font-weight="700" fill="#46655a">CUSTOMER PULSE · SYNTHETIC DEMO</text>
+    <text x="32" y="87" font-size="32" font-weight="700">From a risk flag to a follow-up plan</text>
+    <g fill="#fff" stroke="#c7d8cf">
+      <rect x="32" y="115" width="328" height="182" rx="14"/>
+      <rect x="376" y="115" width="328" height="182" rx="14"/>
+      <rect x="720" y="115" width="328" height="182" rx="14"/>
+    </g>
+    <g font-size="16" font-weight="700" fill="#46655a">
+      <text x="54" y="149">1. PRIORITY QUEUE</text>
+      <text x="398" y="149">2. ACCOUNT EVIDENCE</text>
+      <text x="742" y="149">3. SUGGESTED ACTION</text>
+    </g>
+    <g font-size="23" font-weight="650">
+      <text x="54" y="196">Demo Client Q7M</text>
+      <text x="54" y="228" fill="#9d3435">Critical · 100/100</text>
+      <text x="398" y="193">Activity down 51%</text>
+      <text x="398" y="225">74% on-time delivery</text>
+      <text x="398" y="257">2 open critical issues</text>
+      <text x="742" y="193">Assign an issue owner.</text>
+      <text x="742" y="225">Agree a customer</text>
+      <text x="742" y="257">update today.</text>
+    </g>
+    <text x="32" y="329" font-size="16" fill="#46655a">Workflow illustration using the demo’s rules and account data. The score sets priority.</text>
+  </g>
+</svg>

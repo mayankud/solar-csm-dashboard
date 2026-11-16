@@ -2,6 +2,12 @@
 
 A configurable customer-success workspace for prioritizing retention work. Velunora is an invented demo brand; every bundled customer, CSM, value and activity record is synthetic.
 
+## See a synthetic account review
+
+![Customer Pulse workflow: Demo Client Q7M is critical at 100, with a 51% activity decline, 74% on-time delivery and two critical issues. The suggested action is to assign an issue owner and agree on a customer update.](docs/account-review.svg)
+
+The queue explains why the account is urgent and gives the CSM a first action to discuss. [Validation report](CSM-Stress-Test-Report.md)
+
 ## Run
 
 Serve this folder with any static web server. For example:
